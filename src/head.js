@@ -1,4 +1,4 @@
-const endpoint = 'https://jsonbox.io/box_469e9d579b0dc75a1320'
+const endpoint = 'https://www.npoint.io/79205d4ee2f859bf6ec1'
 const ebox = document.getElementById('erbox')
 const fetchJSON = (a) => {
 	const f = new XMLHttpRequest()
@@ -28,7 +28,7 @@ const isURL = (a) => {
 }
 const hashh = window.location.hash.substr(1)
 if (window.location.hash != '') {
-	const res = JSON.parse(fetchJSON(`${endpoint}/${hashh}`))
+	const res = JSON.parse(fetchJSON(`https://www.npoint.io/docs/79205d4ee2f859bf6ec1`))
 	const data = res.result
 	if (data != null) {
 		if (isURL(data)) {
